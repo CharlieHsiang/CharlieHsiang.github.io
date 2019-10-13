@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>湖南省普通高校招生考试信息管理系统(考生版)</title>
+	</head>
+	<body>
+		<!--我太难了花两个小时Debug 暴风哭泣.jpg&&开发者工具是个好东西-->
+		<img src="img/logo.1.png">
+		<hr>
+		<h2 align="center"><span style="color:cornflowerblue">本科一批至高职专科批高考志愿填报表</span></h2>
+		<div>
+			<table border="1" width="1200" height="1500" cellspacing="0" align="center" valign="middle">
+				<tbody>
+					<tr align="center">
+						<td colspan="2">姓名</td>
+						<td colspan="1"><input type="text"></td>
+						<td colspan="1">性别</td>
+						<td colspan="1"><label><input name="Sex" type="radio" value="">男 </label>
+							<label><input name="Sex" type="radio" value="">女 </label> </td>
+						<td colspan="1">民族</td>
+						<td colspan="2"> <input list="123" type="/">
+							<datalist id="123">
+            <option value="汉族">
+            </option><option value="非汉族">
+        </option></datalist></td>
+						<td colspan="2">照片</td>
+						<td colspan="2"><img src="img/picture.png" width="80px"></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2">籍贯</td>
+						<td colspan="3"><input type="text" style="width:500px;height:30px;"></td>
+						<td colspan="1">出生日期</td>
+						<td colspan="6"><input type="date" id="txtDate" /></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2">既往病史</td>
+						<td colspan="3"><input type="text" style="width:500px;height:30px;"></td>
+						<td colspan="1">身份证号码</td>
+						<td colspan="6"><input type="text" οnkeypress="return event.keyCode>=48&&event.keyCode<=57" ng-pattern="/[^a-zA-Z]/" /></td>
+					</tr>
+					<tr align="center">
+						<td colspan="2">住址</td>
+						<td colspan="3"><input type="text" style="width:500px;height:30px;"></td>
+						<td colspan="1">血型</td>
+						<td colspan="6">
+							<input list="blood">
+							<datalist id="blood">
+				<option value="1">A型
+				</option><option value="2">其他血型
+						</option></datalist>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<h4><span style="color:crimson" align="center">第一志愿</span></h4></td>
+						<td><span style="color:brown"><big>院校</big></span>
+							<input list="school">
+							<datalist id="school">
+		<option value="家里蹲大学">
+			</option><option value="湘潭大学">
+				</option></datalist>
+						</td>
+						<td><span style="color:brown"><big>专业1 </big></span>
+							<input list="major">
+							<datalist id="major">
+				<option value="1">网络工程
+					</option><option value="2">网络工程
+						</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业2 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业3 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业4 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业5</big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+						<td colspan="8">是否服从专业调剂：
+							<input type="radio" name="option1">是
+							<input type="radio" name="option1">否</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<h4><span style="color:crimson" align="center">第二志愿</span></h4></td>
+						<td><span style="color:brown"><big>院校</big></span>
+							<input list="school">
+							<datalist id="school">
+		<option value="家里蹲大学">
+			</option><option value="湘潭大学">
+				</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业1 </big></span>
+							<input list="major">
+							<datalist id="major">
+				<option value="1">网络工程
+					</option><option value="2">网络工程
+						</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业2 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业3 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业4 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业5</big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+						</td>
+						<td colspan="8">是否服从专业调剂：
+							<input type="radio" name="option1">是
+							<input type="radio" name="option1">否</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<h4><span style="color:crimson" align="center">第三志愿</span></h4></td>
+						<td><span style="color:brown"><big>院校</big></span>
+							<input list="school">
+							<datalist id="school">
+		<option value="家里蹲大学">
+			</option><option value="湘潭大学">
+				</option></datalist>
+						</td>
+						<td><span style="color:brown"><big>专业1 </big></span>
+							<input list="major">
+							<datalist id="major">
+				<option value="1">网络工程
+					</option><option value="2">网络工程
+						</option></datalist>
+						</td>
+						<td><span style="color:brown"><big>专业2 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业3 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业4 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业5</big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+						<td colspan="8">是否服从专业调剂：
+							<input type="radio" name="option1">是
+							<input type="radio" name="option1">否</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<h4><span style="color:crimson" align="center">第四志愿</span></h4></td>
+						<td><span style="color:brown"><big>院校</big></span>
+							<input list="school">
+							<datalist id="school">
+		<option value="家里蹲大学">
+			</option><option value="湘潭大学">
+				</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业1 </big></span>
+							<input list="major">
+							<datalist id="major">
+				<option value="1">网络工程
+					</option><option value="2">网络工程
+						</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业2 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业3 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业4 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业5</big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+						<td colspan="8">是否服从专业调剂：
+							<input type="radio" name="option1">是
+							<input type="radio" name="option1">否</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<h4><span style="color:crimson" align="center">第五志愿</span></h4></td>
+						<td><span style="color:brown"><big>院校</big></span>
+							<input list="school">
+							<datalist id="school">
+		<option value="家里蹲大学">
+			</option><option value="湘潭大学">
+				</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业1 </big></span>
+							<input list="major">
+							<datalist id="major">
+				<option value="1">网络工程
+					</option><option value="2">网络工程
+						</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业2 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业3 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业4 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业5</big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+						<td colspan="8">是否服从专业调剂：
+							<input type="radio" name="option1">是
+							<input type="radio" name="option1">否</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<h4><span style="color:crimson" align="center">第六志愿</span></h4></td>
+						<td><span style="color:brown"><big>院校</big></span>
+							<input list="school">
+							<datalist id="school">
+		<option value="家里蹲大学">
+			</option><option value="湘潭大学">
+				</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业1 </big></span>
+							<input list="major">
+							<datalist id="major">
+				<option value="1">网络工程
+					</option><option value="2">网络工程
+						</option></datalist>
+						</td>
+
+						<td><span style="color:brown"><big>专业2 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业3 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业4 </big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+
+						<td><span style="color:brown"><big>专业5</big></span>
+							<input list="major">
+							<datalist id="major">
+						<option value="">网络工程</option>
+						<option value="">网络工程</option>
+						</datalist>
+							<br></td>
+						<td colspan="8">是否服从专业调剂：
+							<input type="radio" name="option1">是
+							<input type="radio" name="option1">否</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr>
+		<pre>                                                                                                           <input type="submit">    <input type="reset" value="重置"></pre>
+		<br>
+		<a href="https://www.xtu.edu.cn/zsjy/bkszs/">
+			<font size="3" color="red" face="楷体">这里是个读书的好地方</font>
+		</a>
+	</body>
+
+</html>
