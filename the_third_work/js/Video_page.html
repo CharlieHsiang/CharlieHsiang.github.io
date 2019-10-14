@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>The military training</title>
+		<link rel="stylesheet" type="text/css" href="../css/Video.css">
+		<script>
+			window.onload = function(){
+				var nav = document.getElementsByClassName("nav")[0];
+				window.onscroll = function(){
+					if(window.pageYOffset>100){
+						nav.style.background = "#454545";
+						nav.style.boxShadow = "0px 4px 2px #454545";
+					}else{
+						nav.style.background = "transparent";
+						nav.style.boxShadow = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body style="background-image: url(../img/Eminem.jpg) ;">
+	<div class="header">
+			<div class="nav">
+				<ul>
+					<li><a href="Video_page.html">Video</a></li>
+					<li><a href="Image_page.html">Image</a></li>
+					<li><a href="information_page.html">Information</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+	<div class="container1" style="text-align: center; margin-top: 50px;">
+		<font face="楷体" color="#FFFFFF" size="7">我们教官的英姿</font>
+		<div id="video">
+			<video width="1020" height="720" controls="controls" >
+            <source src="../img/video1.mp4" type="video/mp4" />
+			</video>
+		</div>
+	</div>
+	
+	<div class="container2" style="text-align: center; margin-top: 50px;">
+		<font face="楷体" color="#FFFFFF" size="7">训练场上我们是最亮的崽</font>
+		<div id="video">
+			<video width="1020" height="720" controls="controls" >
+            <source src="../img/video2.mp4" type="video/mp4" />
+			</video>
+		</div>	
+	</div>
+	
+	<div class="container3" style="text-align: center; margin-top: 50px;">
+		<font face="楷体" color="#FFFFFF" size="7">我们是优秀的三营</font>
+		<div id="video">
+			<video width="1020" height="720" controls="controls" >
+            <source src="../img/video3.mp4" type="video/mp4" />
+			</video>
+		</div>
+	</div>
+
+	</body>
