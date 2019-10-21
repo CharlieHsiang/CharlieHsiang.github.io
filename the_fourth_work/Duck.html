@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>攸县麻鸭（自适应）</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+			<style>
+			body {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				font-family: 'Poppins', sans-serif;
+				background-color: lightblue;
+			}
+			.container {
+				position: relative;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				width: 900px;
+				height: 600px;
+				background: #FFFFFF;
+				margin: 20px;
+			}
+			.container .imgBx {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				width: 50%;
+				height: 100%;
+				background: aliceblue;
+			}
+			.container .imgBx::before {
+				content: '嘎~';
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				color: #000;
+				opacity: 0.1;
+				font-size: 8em;
+				font-weight: 800;
+			}
+			.container .imgBx img {
+				position: relative;
+				width: 700px;
+				left: -50px;
+				transform: rotate(-30deg);
+			}
+			.container .details {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 50%;
+				height: 100%;
+				box-sizing: border-box;
+				padding: 40px;
+			}
+			.container .details h2 {
+				margin: 0;
+				padding: 0;
+				font-size: 2.5em;
+				line-height: 0.8em;
+				color: #444;
+			}
+			.container .details h2 span {
+				font-size: 0.4em;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				color: #999;
+			}
+			.container .details p {
+				max-width: 85%;
+				margin-left: 10%;
+				color: #333;
+				font-size: 15px;
+			}
+			.container .details h3 {
+				margin: 0;
+				padding: 0;
+				font-size: 2.5em;
+				color: #a2a2a2;
+				float: left;
+			}
+			.container .details button {
+				background: #006dbc;
+				color: #fff;
+				border: none;
+				box-shadow: none;
+				outline: none;
+				padding: 15px 20px;
+				margin-top: 5px;
+				font-size: 16px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				font-weight: 600;
+				border-radius: 40px;
+				float: right;
+				cursor: pointer;
+			}
+			.link{
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			@media (max-width: 1080px) {
+				.container {
+					height: auto;
+				}
+				.container .imgBx {
+					padding: 40px;
+					box-sizing: border-box;
+					width: 100% !important;
+					height: auto;
+					text-align: center;
+					overflow: hidden;
+				}
+				.container .imgBx img {
+					left: initial;
+					max-width: 100%;
+					height: 90%;
+					transform: rotate(0deg);
+				}
+				.details {
+					width: 100% !important;
+					height: auto;
+					padding: 20px;
+				}
+				.container .details p {
+					max-width: 100%;
+					margin-left: 0;
+				}
+			}
+			</style>
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="imgBx">
+				<img src="img/duck-removebg-preview (2).png" alt="" />
+			</div>
+			<div class="details">
+				<div class="content">
+					<h2>攸县麻鸭(*¯︶¯*)<br /><span>————你值得拥有</span></h2>
+					<p>
+						攸县麻鸭产于湖南省攸县境内的洣水和沙河流域一带。
+						攸县麻鸭具有体型小、生长快、成熟旱、产蛋多的优点，是一个适应于稻田放牧饲养的蛋鸭品种。
+						湖南攸县麻鸭被“国家水禽品种资源基因库”引进并加以保护。
+						<br>
+						墙裂推荐麻鸭做的啤酒鸭和攸县血鸭！！！！！！
+					</p>
+					<button><a href="https://baike.baidu.com/item/攸县麻鸭/5012840?fr=aladdin" class="link">点击了解更多</a></button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
