@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ride Bike</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="js/background.cycle.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("body").backgroundCycle({
+                    imageUrls: [
+                        'https://cdn2.hubspot.net/hubfs/3434231/Assets/header-location-2019.jpg',
+                        'https://cdn2.hubspot.net/hub/3434231/hubfs/Assets/Technology.jpg',
+                        'https://cdn2.hubspot.net/hubfs/3434231/Assets/header-how-to-lime-1.jpg',
+                    	'https://cdn2.hubspot.net/hubfs/3434231/Assets/lime-about-us-header.jpg'
+                    ],
+                    fadeSpeed: 2000,
+                    duration: 5000,
+                    backgroundSize: SCALING_MODE_COVER
+                });
+            });
+        </script>
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				color: #ffffff;
+			}
+			h1,h2{
+				margin-bottom: .5rem;
+				font-weight: 500;
+				line-height: 1.2;
+				margin-top: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			div{
+				display: block;
+			}
+			
+			.nav {
+				width: 100%;
+				padding: 15px;
+				position: fixed;
+				top: 0;
+				text-align: center;
+				transition: 0.5s;
+				margin-bottom: 15px;
+			}
+			
+			.nav ul li {
+				list-style-type: none;
+				display: inline-block;
+				padding: 10px 50px;
+				font-size: 16px;
+				cursor: pointer;
+				border-radius: 10px;
+				transition: 0.5s;
+			}
+			
+			.nav ul li a {
+				color: black;
+				text-decoration: none;
+			}
+			.nav ul li a:hover {
+				color: #DC143C;
+				text-decoration: none;
+			}
+			.nav ul li:hover {
+				background: #E6E6E6;
+				color:crimson;
+			}
+			.nav-link1:visited{
+				background-image: url(https://cdn2.hubspot.net/hubfs/3434231/Assets/header-location-2019.jpg);
+			}
+			
+			.head{
+				background: rgba(0,0,0,0.7);
+				padding: 40px 40px 40px 40px;
+				margin: 40px 40px 100px;
+				width: 295px;
+				height: 99.200px;
+			}
+			.content{
+				float: right;
+				margin: 0;
+				padding: 0 15px 0 15px;
+				width: 100%;
+				max-width: 480px;
+				height: 500px;
+			}
+			
+			.box{
+				background: rgba(0,0,0,0.7);
+				color: #c5c7c6;
+				line-height: 1.8;
+				font-size: 1.1rem;
+				padding: 60px 40px 100px 40px;
+				font-weight: 400;
+				text-align: left;
+				width: 310px;
+				height: 273.6px;
+			}
+			
+			.foot{
+				bottom: 0;
+				left: 0;
+				float: none;
+				width: 620.8px;
+				height: 93.950px;
+			}
+			.download{
+				margin: 405px 0 30px 95px;
+			}
+			footer{
+				font-weight: 300;
+				margin: 0 40px 30px 40px;
+				font-size: 0.95rem;
+				line-height: 2;
+			}
+		</style>
+    </head>
+    <body >
+    	
+    	<div>
+        <nav id="nav" class="nav">
+			<ul class="nav-links">
+				<li class="nav-item active">
+					<a href="home.html" class="nav-link" data-linkid="0">主页</a>
+				</li>
+				<li class="nav-item">
+					<a href="application.html" class="nav-link" data-linkid="1">应用</a>
+				</li>
+				<li class="nav-item">
+					<a href="Safety.html" class="nav-link" data-linkid="2">安全</a>
+				</li>
+				<li class="nav-item">
+					<a href="Contact.html" class="nav-link" data-linkid="3">联系我们</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+		
+         
+        <header class="head">
+        	<h1 style="font-size: 3rem;">RIDE BIKE</h1>
+        	<p style="color: #cdffd0;font-size: 1.4rem;font-weight: 300;">Change your way in campus</p>
+        </header>
+        
+        
+        <div class="content">
+        	<section>
+        	<div class="box">
+        		<h2 style="color: #00ccfc;font-size: 2rem;">Ride it Now</h2>
+        		<p>车辆内置GPS，并与用户手机上的App连接。</p>
+        		<p>指导用户找到最近的共享电动滑板车；</p>
+        		<p>引导用户停在指定的安全位置，防止丢失</p>
+        		<p>了解前方路况，自动规划最佳路线，及时提醒用户。</p>
+        	</div>
+        	</section>
+        </div>
+        
+        
+        <div class="foot">
+        	<div class="download">
+        		<img src="https://www.li.me/hubfs/Assets/appstore-badge.png" alt="App store" style="width: 100px;height: 100%;">
+        		<img src="https://www.li.me/hubfs/Assets/google-badge.png" alt="Google Play" style="width: 110px;height: 100%;">
+        	</div>
+        	
+        	<footer>
+        		|| Copyright &copy; 2019 RideBike 
+        
+        		|| Design By:   ChenXiang <a href="https://charliehsiang.github.io/index.html" target="_blank" title="项目书" style="color:#007bff;">Introduction</a>  ||
+      		</footer>
+        </div>
+        
+    </body>
+</html>

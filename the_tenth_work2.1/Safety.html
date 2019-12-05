@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Ride Bike</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<script type="text/javascript" src="js/libs/jquery/jquery.js"></script>
+		<script type="text/javascript" src="js/background.cycle.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("body").backgroundCycle({
+					imageUrls: [
+						'https://cdn2.hubspot.net/hubfs/3434231/Assets/header-location-2019.jpg',
+						'https://cdn2.hubspot.net/hub/3434231/hubfs/Assets/Technology.jpg',
+						'https://cdn2.hubspot.net/hubfs/3434231/Assets/header-how-to-lime-1.jpg',
+						'https://cdn2.hubspot.net/hubfs/3434231/Assets/lime-about-us-header.jpg'
+					],
+					fadeSpeed: 2000,
+					duration: 5000,
+					backgroundSize: SCALING_MODE_COVER
+				});
+			});
+		</script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				color: #ffffff;
+			}
+			
+			h1,
+			h2 {
+				margin-bottom: .5rem;
+				font-weight: 500;
+				line-height: 1.2;
+				margin-top: 0;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			div {
+				display: block;
+				margin: 0;
+			}
+			
+			.nav {
+				width: 100%;
+				padding: 15px;
+				position: fixed;
+				top: 0;
+				text-align: center;
+				transition: 0.5s;
+				margin-bottom: 15px;
+			}
+			
+			.nav ul li {
+				list-style-type: none;
+				display: inline-block;
+				padding: 10px 50px;
+				font-size: 16px;
+				cursor: pointer;
+				border-radius: 10px;
+				transition: 0.5s;
+			}
+			
+			.nav ul li a {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.nav ul li a:hover {
+				color: #DC143C;
+				text-decoration: none;
+			}
+			
+			.nav ul li:hover {
+				background: #E6E6E6;
+				color: crimson;
+			}
+			
+			.nav-link1:visited {
+				background-image: url(https://cdn2.hubspot.net/hubfs/3434231/Assets/header-location-2019.jpg);
+			}
+			
+			.head {
+				background: rgba(0, 0, 0, 0.7);
+				padding: 40px 40px 40px 40px;
+				margin: 40px 40px 100px;
+				width: 295px;
+				height: 99.200px;
+			}
+			
+			.content {
+				margin: 0 313px;
+				padding: 0 15px 0 15px;
+				width: 100%;
+				max-width: 575px;
+			}
+			
+			figure{
+				position: relative;
+				float: left;
+				overflow: hidden;
+				max-width: 200px;
+				height: auto;
+				text-align: center;
+				cursor: pointer;
+				margin: 0 auto;
+				width: 190px;
+				display: block;
+			}
+			
+			section{
+				height: auto;
+				width: 880px;
+			}
+			
+			figure img{
+				position: relative;
+				display: block;
+				min-height: 100%;
+				max-width: 100%;
+				opacity: 0.8;
+				border-style: none;
+				vertical-align: middle;
+			}
+			
+			figure.effect-goliath {
+				background: #df4e4e;
+				width: 170px;
+				margin: 20px;
+			}
+			
+			figure.effect-goliath img,
+			figure.effect-goliath h2 {
+				-webkit-transition: -webkit-transform 0.35s;
+				transition: transform 0.35s;
+			}
+			
+			figure h2 span{
+				font-weight: 800;
+			}
+			
+			figure.effect-goliath img {
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+			
+			figure.effect-goliath h2 {
+				font-size: 1.3rem;
+			}
+			
+			figure.effect-goliath h2,
+			figure.effect-goliath p {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding: 30px;
+			}
+			
+			figure.effect-goliath p {
+				text-transform: none;
+				font-size: 1rem;
+				padding: 15px 10px;
+				opacity: 0;
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+				transition: opacity 0.35s, transform 0.35s;
+				-webkit-transform: translate3d(0, 50px, 0);
+				transform: translate3d(0, 50px, 0);
+			}
+			
+			figure.effect-goliath:hover img {
+				-webkit-transform: translate3d(0, -80px, 0);
+				transform: translate3d(0, -80px, 0);
+			}
+			
+			figure.effect-goliath:hover h2 {
+				-webkit-transform: translate3d(0, -100px, 0);
+				transform: translate3d(0, -100px, 0);
+			}
+			
+			figure.effect-goliath:hover p {
+				opacity: 1;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			
+			.foot {
+				bottom: 0;
+				left: 0;
+				float: none;
+				width: 620.8px;
+				height: 93.950px;
+			}
+			
+			.download {
+				margin: 405px 0 30px 95px;
+			}
+			
+			footer {
+				font-weight: 300;
+				margin: 0 40px 30px 40px;
+				font-size: 0.95rem;
+				line-height: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div>
+			<nav id="nav" class="nav">
+				<ul class="nav-links">
+					<li class="nav-item active">
+					<a href="home.html" class="nav-link" data-linkid="0">主页</a>
+				</li>
+				<li class="nav-item">
+					<a href="application.html" class="nav-link" data-linkid="1">应用</a>
+				</li>
+				<li class="nav-item">
+					<a href="Safety.html" class="nav-link" data-linkid="2">安全</a>
+				</li>
+				<li class="nav-item">
+					<a href="Contact.html" class="nav-link" data-linkid="3">联系我们</a>
+				</li>
+			</nav>
+		</div>
+
+		<header class="head">
+			<h1 style="font-size: 3rem;">RIDE BIKE</h1>
+			<p style="color: #cdffd0;font-size: 1.4rem;font-weight: 300;">Change your way in campus</p>
+		</header>
+
+		<div class="content">
+			<section>
+				<figure class="effect-goliath">
+					<img src="https://cdn2.hubspot.net/hubfs/3434231/Assets/how-to-2018-nt-6.jpg" width="170px" height="100%" />
+					<figcaption>
+						<h2><span>遵守法律</span></h2>
+						<p>行车时遵守法律，并注意规避行人</p>
+					</figcaption>
+				</figure>
+
+				<figure class="effect-goliath">
+					<img src="https://cdn2.hubspot.net/hubfs/3434231/Assets/how-to-2018-nt-5.jpg" width="170px" height="100%" />
+					<figcaption>
+						<h2><span>注意障碍物</span></h2>
+						<p>手机App会记录行车路上障碍，并及时发出提醒</p>
+					</figcaption>
+				</figure>
+
+				<figure class="effect-goliath">
+					<img src="https://cdn2.hubspot.net/hubfs/3434231/Assets/how-to-2018-nt-3.jpg" width="170px" height="100%" />
+					<figcaption>
+						<h2><span>安全检查</span></h2>
+						<p>请在骑车前进行安全检查，以确安全</p>
+					</figcaption>
+				</figure>
+
+				<figure class="effect-goliath">
+					<img src="https://cdn2.hubspot.net/hubfs/3434231/Assets/how-to-2018-nt-2.jpg" width="170px" height="100%" />
+					<figcaption>
+						<h2><span>正确停车</span></h2>
+						<p>当在违规地区停车时，手机App会发出警报</p>
+					</figcaption>
+				</figure>
+			</section>
+		</div>
+
+		<div class="foot">
+			<div class="download">
+				<img src="https://www.li.me/hubfs/Assets/appstore-badge.png" alt="App store" style="width: 100px;height: 100%;">
+				<img src="https://www.li.me/hubfs/Assets/google-badge.png" alt="Google Play" style="width: 110px;height: 100%;">
+			</div>
+
+			<footer>
+				|| Copyright &copy; 2019 RideBike || Design By: ChenXiang
+				<a href="https://charliehsiang.github.io/index.html" target="_blank" title="项目书" style="color:#007bff;">Introduction</a> ||
+			</footer>
+		</div>
+
+	</body>
+
+</html>
